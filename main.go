@@ -27,6 +27,20 @@ func addNode(t *Node, v int) int {
 	return addNode(t.Next, v)
 }
 
+func traverse(t *Node) {
+	if t == nil {
+		fmt.Println("-> Empty List!")
+		return
+	}
+	for t != nil {
+		fmt.Printf("%d ->", t.Value)
+		t = t.Next
+	}
+	fmt.Println()
+}
+
+var root = new(Node)
+
 func main() {
-	fmt.Println("vim-go")
+	fmt.Println(root)
 }
