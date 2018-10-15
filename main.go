@@ -43,4 +43,13 @@ var root = new(Node)
 
 func main() {
 	fmt.Println(root)
+	root = nil
+	traverse(root)
+	addNode(root, 1)
+	addNode(root, 1)
+	traverse(root)
+	addNode(root, 10)
+	traverse(root)
+	addNode(root, 100)
+	traverse(root)
 }
